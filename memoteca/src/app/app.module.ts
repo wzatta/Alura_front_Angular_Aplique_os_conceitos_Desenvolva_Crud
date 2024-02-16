@@ -5,20 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
-import { PensamentosComponent } from './componentes/pensamentos/pensamentos.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
+import { CriarPensamentosComponent } from './componentes/pensamentos/criar-pensamentos/criar-pensamentos.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
-    PensamentosComponent,
-    RodapeComponent
+    RodapeComponent,
+    CriarPensamentosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
